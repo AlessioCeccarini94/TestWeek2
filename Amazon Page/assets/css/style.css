@@ -1,0 +1,115 @@
+h1 {
+  font-size: 2em;
+  font-family: Helvetica;
+}
+h3 {
+  font-size: 1.4em;
+}
+
+header {
+  background-color: #222f3e;
+  color: white;
+}
+
+header img {
+  width: 130px;
+  padding: 20px;
+}
+header ul li,
+a {
+  display: inline-block;
+  padding-left: 20px;
+  text-decoration: none;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+#topbarMenu {
+  background-color: #35475a;
+}
+#topMain {
+  background-color: #f56600;
+  margin-top: 30px;
+  color: white;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#topMain p {
+  padding-top: 5px;
+}
+#mainTitle {
+  text-align: center;
+  background-image: url(../images/bg-image.png);
+  padding: 80px;
+  margin-top: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#perfectGift {
+  display: inline-block;
+}
+#perfectGift table caption {
+  color: black;
+  text-align: left;
+  display: flex;
+  padding: 10px;
+}
+#perfectGift a p {
+  color: #35475a;
+  font-weight: bold;
+}
+#perfectGift img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 50px;
+  box-shadow: 5px 5px 5px gray;
+}
+#perfectGift table {
+  color: white;
+  width: 90%;
+}
+#firstProduct img {
+  width: 100%;
+  margin-top: 30px;
+}
+#firstProduct {
+  text-align: center;
+  font-size: 1.2em;
+}
+#firstProduct a {
+  color: #35475a;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#secondProduct img {
+  width: 100%;
+  margin-top: 30px;
+}
+#secondProduct {
+  text-align: center;
+  font-size: 1.2em;
+}
+#secondProduct a {
+  color: #35475a;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+#bottomBar {
+  background-color: #35475a;
+  text-align: center;
+}
+#bottomBar a {
+  padding: 10px;
+}
+#footerLogo {
+  background-color: #222f3e;
+}
+#footerLogo img {
+  width: 190px;
+  padding-left: 650px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
