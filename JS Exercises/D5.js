@@ -10,53 +10,80 @@ REGOLE
 /* ESERCIZIO 1
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
-const pets = ['dog', 'cat', 'hamster', 'redfish']
+const pets = ["dog", "cat", "hamster", "redfish"]
+console.log(pets)
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
 */
+pets.sort()
+console.log(pets)
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
+pets.reverse()
+console.log(pets)
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+pets.shift
+let dog = pets.shift()
+pets.push(dog)
+console.log(pets)
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
 */
 const cars = [
   {
-    brand: 'Ford',
-    model: 'Fiesta',
-    color: 'red',
-    trims: ['titanium', 'st', 'active'],
+    brand: "Ford",
+    model: "Fiesta",
+    color: "red",
+    trims: ["titanium", "st", "active"],
   },
   {
-    brand: 'Peugeot',
-    model: '208',
-    color: 'blue',
-    trims: ['allure', 'GT'],
+    brand: "Peugeot",
+    model: "208",
+    color: "blue",
+    trims: ["allure", "GT"],
   },
   {
-    brand: 'Volkswagen',
-    model: 'Polo',
-    color: 'black',
-    trims: ['life', 'style', 'r-line'],
+    brand: "Volkswagen",
+    model: "Polo",
+    color: "black",
+    trims: ["life", "style", "r-line"],
   },
 ]
+
+const licensePlate = ["AB123CD", "EF456GH", "IJ890KL"]
+for (let i = 0; i < cars.length; i++) {
+  cars[i].licensePlate = licensePlate[i]
+}
+console.log(cars)
 
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+cars.push()
+
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop
+}
+console.log(cars)
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 const justTrims = []
+for (let i = 0; i < cars.length; i++) {
+  if (cars[i].trims === 0) {
+    justTrims.push(i)
+  }
+}
+console.log(cars)
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -69,10 +96,45 @@ const justTrims = []
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
+let i = 0
+while (i < numericArray.length) {
+  console.log(numericArray[i])
+  if (numericArray[i] === 32) {
+    break
+  }
+  i++
+}
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ['g', 'n', 'u', 'z', 'd']
+const charactersArray = ["g", "n", "u", "z", "d"]
+let numbersArray = []
+
+for (let i = 0; i < charactersArray.length; i++) {
+  const letter = charactersArray[i]
+  switch (letter) {
+    case "g":
+      position = 7
+      break
+    case "n":
+      position = 12
+      break
+    case "u":
+      position = 19
+      break
+    case "z":
+      position = 21
+      break
+    case "d":
+      position = 4
+      break
+
+    default:
+      break
+  }
+  numbersArray.push(position)
+}
+console.log(numbersArray)
