@@ -69,6 +69,7 @@ a {
   border-radius: 20px;
   margin-left: 50px;
   box-shadow: 5px 5px 5px gray;
+  padding-left: 100px;
 }
 #perfectGift table {
   color: white;
@@ -112,7 +113,7 @@ a {
 }
 #footerLogo img {
   width: 190px;
-  padding-left: 650px;
+  padding-left: 870px;
   margin-top: 50px;
   padding-bottom: 50px;
 }
