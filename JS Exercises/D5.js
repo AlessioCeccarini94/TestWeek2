@@ -125,7 +125,7 @@ for (let i = 0; i < charactersArray.length; i++) {
   const letter = charactersArray[i]
   switch (letter) {
     case "g":
-      position = 7
+      position = 6
       break
     case "n":
       position = 12
